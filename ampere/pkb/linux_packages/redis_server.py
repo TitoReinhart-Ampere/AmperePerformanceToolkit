@@ -40,7 +40,6 @@ class RedisEvictionPolicy:
 
 _VERSION = flags.DEFINE_string(
     f"{PACKAGE_NAME}_version", "7.2.0", "Version of redis server to use."
-    #f"{PACKAGE_NAME}_version", "2962227", "Version of redis server to use."
 )
 _IO_THREADS = flags.DEFINE_integer(
     f"{PACKAGE_NAME}_io_threads",
