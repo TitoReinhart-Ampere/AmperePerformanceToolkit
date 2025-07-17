@@ -40,6 +40,7 @@ class RedisEvictionPolicy:
 
 _VERSION = flags.DEFINE_string(
     f"{PACKAGE_NAME}_version", "7.2.0", "Version of redis server to use."
+    #f"{PACKAGE_NAME}_version", "2962227", "Version of redis server to use."
 )
 _IO_THREADS = flags.DEFINE_integer(
     f"{PACKAGE_NAME}_io_threads",
@@ -110,7 +111,7 @@ _ENABLE_THP = flags.DEFINE_bool(
 _DEFAULT_PORT = 6379
 REDIS_PID_FILE = "redis.pid"
 FLAGS = flags.FLAGS
-REDIS_GIT = "https://github.com/antirez/redis.git"
+REDIS_GIT = "https://github.com/redis/redis.git"
 REDIS_BACKUP = "redis_backup"
 
 
